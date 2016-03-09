@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Resources\ZooStyleSheet.xsl"?>
+
+<!DOCTYPE animals SYSTEM "Zoo.dtd">
+<animals>
+	<animal category="mammal">
+		<name>Bat-eared Fox</name>
+		<scname>Otocyon megalotis</scname>
+		<breeding>
+			<quantity>2-5</quantity>
+			<period>65 days</period>
+		</breeding>
+		<avgWeight>
+			<male>4.5</male>
+			<female>2</female>			
+		</avgWeight>
+		<description diet="carnivore">
+			Its name says it all: this fox has big ears, and they come in handy for a variety of reasons. First of all, big ears help shed body heat (by cooling the blood that circulates near the bare surface of the ears) – a great feature for this hot-climate critter. Second, big ears help the fox listen for its primary prey, insects (an unusual diet for foxes!). Finally, the fox makes visual signals with its ears to help keep in contact with other members of its family group.
+		</description>
+		<dngStatus>Least Concern</dngStatus>
+	</animal>
+	<animal category="mammal">
+		<name>California Sea Lion</name>
+		<scname>Zalophus californianus californianus</scname>
+		<breeding>
+			<quantity>1</quantity>
+			<period>11 months</period>
+		</breeding>
+		<avgWeight>
+			<male>390</male>
+			<female>110</female>			
+		</avgWeight>
+		<description diet="carnivore">
+			Sea lions are great swimmers, reaching up to 15 miles per hour. They are sometimes seen "porpoising," or jumping out of the water, presumably to speed up their swimming. A sea lion’s sleek body is built for diving deep into the ocean in search of food.
+		</description>
+		<dngStatus>Least Concern</dngStatus>
+	</animal>
+	<animal category="mammal">
+		<name>Western Gorilla</name>
+		<scname>Gorilla gorilla</scname>
+		<breeding>
+			<quantity>1</quantity>
+			<period>275 days</period>
+		</breeding>
+		<avgWeight>
+			<male>200</male>
+			<female>68</female>			
+		</avgWeight>
+		<description diet="omnivores">
+			What’s one of the first things you notice about gorillas? Probably their great size. These are the largest living primates (a group that includes monkeys, apes, and humans). A fully-grown male gorilla weighs up to 400 pounds and measures about 5 ½ feet tall. Females are just a bit shorter (about five feet) but weigh considerably less (about 200 pounds).
+		</description>
+		<dngStatus>Critically endangered</dngStatus>
+	</animal>
+	<animal category="bird">
+		<name>Golden eagle</name>
+		<scname>Aquila chrysaetos</scname>
+		<breeding>
+			<quantity>2-3</quantity>
+			<period>43 days</period>
+		</breeding>
+		<avgWeight>
+			<male>6.5</male>
+			<female>3</female>			
+		</avgWeight>
+		<description diet="carnivore">
+			The golden eagle is one of the best-known birds of prey in the Northern Hemisphere. It is the most widely distributed species of eagle. Like all eagles, it belongs to the family Accipitridae.
+		</description>
+		<dngStatus>Least Concern</dngStatus>
+	</animal>
+	<animal category="bird">
+		<name>Great Horned Owl</name>
+		<scname>Bubo virginianus</scname>
+		<breeding>
+			<quantity>2-4</quantity>
+			<period>30 days</period>
+		</breeding>
+		<avgWeight>
+			<male>2.5</male>
+			<female>0.9</female>			
+		</avgWeight>
+		<description diet="carnivore">
+			The owl is equipped with sharp senses to help it find food in the dark. Its large eyes give it four times the night vision that we have. Its hearing is also extremely sharp, which comes in handy as it searches for rodents and other hidden prey.
+		</description>
+		<dngStatus>Least Concern</dngStatus>
+	</animal>
+	<animal category="fish">
+		<name>Shortfin mako shark</name>
+		<scname>Isurus oxyrinchus</scname>
+		<breeding>
+			<quantity>4-18</quantity>
+			<period>17 months</period>
+		</breeding>
+		<avgWeight>
+			<male>600</male>
+			<female>570</female>			
+		</avgWeight>
+		<description diet="carnivore">
+			The shortfin mako shark, also known as the blue pointer, is a large mackerel shark. It is commonly referred to as the mako shark together with the longfin mako shark. 
+		</description>
+		<dngStatus>Vulnerable</dngStatus>
+	</animal>
+	<animal category="fish">
+		<name>Freshwater Catfish</name>
+		<scname>Siluriformes</scname>
+		<breeding>
+			<quantity>1500</quantity>
+			<period>15 months</period>
+		</breeding>
+		<avgWeight>
+			<male>100</male>
+			<female>88</female>			
+		</avgWeight>
+		<description diet="herbivore">
+			Catfish are a large and diverse group of fish found all over the world. Though a few types inhabit the ocean, the majority lives in freshwater. Catfish can be easily recognized by the so-called "whiskers" (barbels) that give them their name.
+		</description>
+		<dngStatus>Least Concern</dngStatus>
+	</animal>
+	<animal category="reptile">
+		<name>Marine Iguana</name>
+		<scname>Amblyrhynchus cristatus</scname>
+		<breeding>
+			<quantity>1-6</quantity>
+			<period>3 months</period>
+		</breeding>
+		<avgWeight>
+			<male>4</male>
+			<female>3</female>			
+		</avgWeight>
+		<description diet="omnivore">
+			Marine Iguanas are between 50 and 100 cms (20 - 39 inches) in length and they weigh up to 10 kgs (22 lbs), although there is a vast size difference between the iguanas from different islands. The largest Marine Iguanas are found on Fernandina and Isabela Islands where as the smallest Marine Iguanas are found on Genovesa Island.
+		</description>
+		<dngStatus>Vulnerable</dngStatus>
+	</animal>
+	<animal category="reptile">
+		<name>Yangtze Mamushi</name>
+		<scname>Gloydius blomhoffi siniticus</scname>
+		<breeding>
+			<quantity>3</quantity>
+			<period>4 months</period>
+		</breeding>
+		<avgWeight>
+			<male>5</male>
+			<female>2</female>			
+		</avgWeight>
+		<description diet="carnivore">
+			The body pattern consists of a pale gray, reddish-brown, or yellow-brown background, overlaid with a series of irregularly-shaped lateral blotches. These blotches are bordered with black and often have lighter centers. The head is dark brown or black, with beige or pale-gray sides.
+		</description>
+		<dngStatus>Not listed by IUCN</dngStatus>
+	</animal>
+	<animal category="reptile">
+		<name>Chinese Alligator</name>
+		<scname>Alligator sinensis</scname>
+		<breeding>
+			<quantity>10-40</quantity>
+			<period>70 days</period>
+		</breeding>
+		<avgWeight>
+			<male>40</male>
+			<female>36</female>			
+		</avgWeight>
+		<description diet="carnivore">
+			The Chinese alligator, also known as the Yangtze alligator, is one of two known living species of Alligator, a genus in the family Alligatoridae. This critically endangered species is endemic to eastern China.
+		</description>
+		<dngStatus>Critically Endangered</dngStatus>
+	</animal>
+	<animal category="reptile">
+		<name>Cuvier's Dwarf Caiman</name>
+		<scname>Paleosuchus palpebrosus</scname>
+		<breeding>
+			<quantity>10-25</quantity>
+			<period>90 days</period>
+		</breeding>
+		<avgWeight>
+			<male>7</male>
+			<female>6</female>			
+		</avgWeight>
+		<description diet="carnivore">
+			Cuvier's dwarf caiman is a small crocodilian from northern and central South America in the alligator family. It is found in Bolivia, Brazil, Colombia, Ecuador, French Guiana, Guyana, Paraguay, Peru, Surinam and Venezuela.
+		</description>
+		<dngStatus>Least Concern</dngStatus>
+	</animal>
+	<animal category="invertebrate">
+		<name>Giant Pacific octopus</name>
+		<scname>Enteroctopus dofleini</scname>
+		<breeding>
+			<quantity>3-8</quantity>
+			<period>4 months</period>
+		</breeding>
+		<avgWeight>
+			<male>75</male>
+			<female>61</female>			
+		</avgWeight>
+		<description diet="herbivore">
+			Enteroctopus dofleini, also known as the giant Pacific octopus or North Pacific giant octopus, is a large marine cephalopod belonging to the genus Enteroctopus.
+		</description>
+		<dngStatus>Unknown</dngStatus>
+	</animal>
+	<animal category="amphibian">
+		<name>Hellbender</name>
+		<scname>Cryptobranchus alleganiensis</scname>
+		<breeding>
+			<quantity>150-200</quantity>
+			<period>60 days</period>
+		</breeding>
+		<avgWeight>
+			<male>2.5</male>
+			<female>1.5</female>			
+		</avgWeight>
+		<description diet="omnivore">
+			The hellbender, also known as the hellbender salamander, is a species of giant salamander endemic to eastern North America.
+		</description>
+		<dngStatus>Near threatened</dngStatus>
+	</animal>
+	<animal category="amphibian">
+		<name>Vietnamese Moss Frog</name>
+		<scname>Theloderma corticale</scname>
+		<breeding>
+			<quantity>15-20</quantity>
+			<period>3 months</period>
+		</breeding>
+		<avgWeight>
+			<male>0.4</male>
+			<female>0.6</female>			
+		</avgWeight>
+		<description diet="omnivore">
+			Theloderma corticale is a species of frog in the Rhacophoridae family. It is found in northern Vietnam and possibly in China and adjacent Laos.
+		</description>
+		<dngStatus>Least Concern</dngStatus>
+	</animal>
+</animals>
