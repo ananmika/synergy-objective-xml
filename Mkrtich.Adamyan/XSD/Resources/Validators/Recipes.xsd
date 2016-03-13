@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<xs:complexType name="steps">
+  <xs:sequence>
+    <xs:element name="step" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingredients">
+  <xs:sequence>
+    <xs:element name="ingredient" type="ingredient" minOccurs="1" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingredient">
+  <xs:sequence>
+    <xs:element name="quantity" type="xs:decimal" minOccurs="0"/>
+    <xs:element name="measurementUnit" type="xs:string" minOccurs="0"/>
+    <xs:element name="name" type="xs:string"/>
+  </xs:sequence>
+	<xs:attribute name="state" type="xs:string" use="optional"/>
+</xs:complexType>
+
+<xs:complexType name="cook">
+  <xs:sequence>
+    <xs:element name="duration" type="xs:duration"/>
+    <xs:element name="steps" type="steps"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="attrString">
+	<xs:simpleContent>
+		<xs:extension base="xs:string">
+			<xs:attribute name="imgSource" type="xs:string"/>
+		</xs:extension>
+	</xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="recipe">
+	<xs:sequence>
+		<xs:element name="name" type="attrString"/>
+		<xs:element name="countryOfOrigin" type="xs:string"/>
+		<xs:element name="ingredients" type="ingredients"/>
+		<xs:element name="cooking" type="cook"/>
+	</xs:sequence>
+	<xs:attribute name="category" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:element name="recipes">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="recipe" type="recipe" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>
