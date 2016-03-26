@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pruducts>
+	<product>
+		<buyer id="3"/>
+		<price currency="1">10000</price>
+		<name>iWatch</name>
+	</product>
+	<product>
+		<buyer id="2"/>
+		<price currency="5">5234</price>
+		<name>Bicycle</name>
+	</product>
+	<product>
+		<buyer id="4"/>
+		<price currency="2">2000</price>
+		<name>Cake</name>
+	</product>
+	<product>
+		<buyer id="5"/>
+		<price currency="4">1000000000</price>
+		<name>Batman's Mask</name>
+	</product>
+	<product>
+		<buyer id="1"/>
+		<price currency="3">45000</price>
+		<name>Computer</name>
+	</product>
+</pruducts>

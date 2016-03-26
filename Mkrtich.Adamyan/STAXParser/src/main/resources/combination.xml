@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pruducts>
+  <product>
+    <buyer>Anahit Simonyan</buyer>
+    <price>10000 USD</price>
+    <name>iWatch</name>
+  </product>
+  <product>
+    <buyer>Narek Musakhanyan</buyer>
+    <price>5234 EUR</price>
+    <name>Bicycle</name>
+  </product>
+  <product>
+    <buyer>Dan Balan</buyer>
+    <price>2000 AMD</price>
+    <name>Cake</name>
+  </product>
+  <product>
+    <buyer>Bruce Wayne</buyer>
+    <price>1000000000 YEN</price>
+    <name>Batman's Mask</name>
+  </product>
+  <product>
+    <buyer>Mkrtich Adamyan</buyer>
+    <price>45000 RUB</price>
+    <name>Computer</name>
+  </product>
+</pruducts>
