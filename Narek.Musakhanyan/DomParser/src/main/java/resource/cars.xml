@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cars>
+	<car company="Mercedes-Benz">
+		<predecessor name="Benz &amp; Cie">
+			<from>1883</from>
+			<to>1926</to>
+		</predecessor>
+		<predecessor name="Daimler-Motoren-Gesellschaft">
+			<from>1890</from>
+			<to>1926</to>
+		</predecessor>
+		<founded>1986-01-29</founded>
+		<founders>
+			<founder>Karl Benz</founder>
+			<founder>Gottlieb Daimler</founder>
+		</founders>		
+		<headquarters>Stuttgart</headquarters>
+		<products>
+			<product>Automobiles</product>
+			<product>Buses</product>
+			<product>Internal combustion engines</product>
+			<product>Luxury vehicles</product>
+		</products>
+		<owners>
+			<owner percent="100.00">Daimler AG</owner>
+		</owners>		
+		<website>http://www.mercedes-benz.com/en/</website>
+	</car>
+	
+	<car company="BMW">
+		<predecessor name="Rapp Motorenwerke">
+			<from>1913</from>
+			<to>1917</to>
+		</predecessor>
+		<founded>1916-03-08</founded>
+		<founders>
+			<founder>Franz Josef Popp</founder>
+			<founder>Karl Rapp</founder>
+			<founder>Camillo Castiglioni</founder>
+		</founders>
+		<headquarters>Munich</headquarters>
+		<products>
+			<product>Automobiles</product>
+			<product>Bicycles</product>
+			<product>Motorcycles</product>
+			<product>Sports cars</product>
+			<product>Luxury vehicles</product>
+		</products>
+		<owners>
+			<owner percent="29.00">Stefan Quandt</owner>	
+			<owner percent="21.00">Susanne Klatten</owner>
+			<owner percent="50.00">Public float</owner>
+		</owners>
+		<website>http://www.bmwgroup.com</website>
+	</car>
+	
+	<car company="Audi">
+		<predecessor name="Auto Union GmbH">
+			<from>1932</from>
+			<to>1969</to>
+		</predecessor>
+		<predecessor name="NSU Motorenwerke AG">
+			<from>1873</from>
+			<to>1969</to>
+		</predecessor>
+		<founded>1909-07-16</founded>
+		<founders>
+			<founder>August Horch</founder>
+		</founders>
+		<headquarters>Ingolstadt</headquarters>
+		<products>
+			<product>Luxury vehicles</product>
+			<product>Automobiles</product>			
+		</products>
+		<owners>
+			<owner percent="99.55">Volkswagen Group</owner>
+		</owners>
+		<website>http://www.audi.com/index.html</website>
+	</car>
+	
+	<car company="Bentley">
+		<predecessor name="Rolls-Royce Motors">
+			<from>1973</from>
+			<to>1998</to>
+		</predecessor>
+		<founded>1973-10-25</founded>
+		<founders>
+			<founder>Rolls-Royce Limited</founder>
+		</founders>
+		<headquarters>United Kingdom</headquarters>
+		<products>
+			<product>Automobiles</product>
+		</products>
+		<owners>
+			<owner percent="99.50">Volkswagen Group</owner>
+		</owners>
+		<website>http://www.bmwgroup.com</website>
+	</car>
+	
+	<car company="Peugeot">
+		<predecessor name="Émile Peugeot">
+			<from>1858</from>
+			<to>1926</to>
+		</predecessor>
+		<founded>1889-10-31</founded>
+		<founders>
+			<founder>Armand Peugeot</founder>
+		</founders>
+		<headquarters>Paris</headquarters>
+		<products>
+			<product>Luxury vehicles</product>
+			<product>Cars</product>
+			<product>Sports cars</product>
+			<product>Commercial vehicles</product>			
+		</products>
+		<owners>
+			<owner percent="99.5">Offenhauser</owner>
+		</owners>
+		<website>http://www.Peugeot.com</website>
+	</car>
+</cars>
