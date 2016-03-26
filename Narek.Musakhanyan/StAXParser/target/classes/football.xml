@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<football>
+	<team name="Real Madrid">
+		<stadium>Santiago Bernabéu</stadium>
+		<founded>1902</founded>
+		<nickname>Los Blancos</nickname>
+		<league>La Liga</league>
+		<capacity>85454</capacity>
+		<coach>Zinedine Zidane</coach>
+		<members>
+			<member position="goalkeeper">
+				<player>Keylor Navas</player>
+			</member>
+			<member position="defender">
+				<player>Sergio Ramos</player>
+				<player>Varane</player>
+				<player>Carvajal</player>
+			</member>
+			<member position="midfielder">
+				<player>James Rodriguez</player>
+				<player>Bale</player>
+				<player>Isco</player>
+				<player>Modric</player>
+				<player>Kroos</player>
+			</member>
+			<member position="forward">
+				<player>Ronaldo</player>
+				<player>Benzema</player>
+			</member>
+		</members>
+	</team>
+	
+	<team name="Juventus">
+		<stadium>Juventus Stadium</stadium>
+		<founded>1897</founded>
+		<nickname>The Old Lady</nickname>
+		<league>Serie A</league>
+		<capacity>41475</capacity>
+		<coach>Massimiliano Allegri</coach>	
+		<members>
+			<member position="goalkeeper">
+				<player>Buffon</player>
+			</member>
+			<member position="defender">
+				<player>Isla</player>
+				<player>Chiellini</player>
+				<player>Caceres</player>
+			</member>
+			<member position="midfielder">
+				<player>Zaza</player>
+				<player>Evra</player>
+				<player>Khedira</player>
+				<player>Pogba</player>
+				<player>Dybala</player>
+			</member>
+			<member position="forward">
+				<player>Mandzukic</player>
+				<player>Morata</player>
+			</member>
+		</members>		
+	</team>
+	
+	<team name="Porto">
+		<stadium>Estádio do Dragão</stadium>
+		<founded>1893</founded>
+		<nickname>Dragons</nickname>
+		<league>Primeira Liga</league>
+		<capacity>50092</capacity>
+		<coach>José Peseiro</coach>
+		<members>
+			<member position="goalkeeper">
+				<player>Iker Casillas</player>
+			</member>
+			<member position="defender">
+				<player>Maxi Pereira</player>
+				<player>Miguel Layún</player>
+				<player>Martins Indi</player>
+			</member>
+			<member position="midfielder">
+				<player>Sérgio Oliveira</player>
+				<player>Evandro</player>
+				<player>Herrera</player>
+				<player>André André</player>
+				<player>Danilo Pereira</player>
+			</member>
+			<member position="forward">
+				<player>Alberto Bueno</player>
+				<player>Aboubakar</player>
+			</member>
+		</members>
+	</team>
+	
+	<team name="Paris Saint-Germain">
+		<stadium>Parc des Princes</stadium>
+		<founded>1970</founded>
+		<nickname>Les Rouge-et-Bleu</nickname>
+		<league>Ligue 1</league>
+		<capacity>48712</capacity>
+		<coach>Laurent Blanc</coach>
+		<members>
+			<member position="goalkeeper">
+				<player>Kevin Trapp</player>
+			</member>
+			<member position="defender">
+				<player>Tiago Silva</player>
+				<player>Marquinhos</player>
+				<player>Maxwell</player>
+			</member>
+			<member position="midfielder">
+				<player>Marco Verratti</player>
+				<player>Lucas</player>
+				<player>Angel Di Maria</player>
+				<player>Thiago Motta</player>
+				<player>Javier Pastore</player>
+			</member>
+			<member position="forward">
+				<player>Edison Cavani</player>
+				<player>Zlatan Ibrahimovic</player>
+			</member>
+		</members>
+	</team>
+	<team name="Bayern Munich">
+		<stadium>Allianz Arena</stadium>
+		<founded>1900</founded>
+		<nickname>Stern des Südens</nickname>
+		<league>Bundesliga</league>
+		<capacity>75000</capacity>
+		<coach>Pep Guardiola</coach>
+		<members>
+			<member position="goalkeeper">
+				<player>Manuel Neuer</player>
+			</member>
+			<member position="defender">
+				<player>Rafinha</player>
+				<player>Jerome Boateng</player>
+				<player>Philipp Lahm</player>
+			</member>
+			<member position="midfielder">
+				<player>Thiago</player>
+				<player>Franck Ribery</player>
+				<player>Javier Martinez</player>
+				<player>Arjen Robben</player>
+				<player>Xabi Alonso</player>
+			</member>
+			<member position="forward">
+				<player>Robert Lewandowski</player>
+				<player>Douglas Costa</player>
+			</member>
+		</members>
+	</team>
+	<team name="Liverpool">
+		<stadium>Anfield</stadium>
+		<founded>1892</founded>
+		<nickname>The Reds</nickname>
+		<league>Premier League</league>
+		<capacity>45276</capacity>
+		<coach>Jürgen Klopp</coach>
+		<members>
+			<member position="goalkeeper">
+				<player>Mignolet</player>
+			</member>
+			<member position="defender">
+				<player>Toure</player>
+				<player>Clyne</player>
+				<player>Lovren</player>
+			</member>
+			<member position="midfielder">
+				<player>Lallana</player>
+				<player>Can</player>
+				<player>Henderson</player>
+				<player>Milner</player>
+				<player>Ibe</player>
+			</member>
+			<member position="forward">
+				<player>Firmino</player>
+				<player>Origi</player>
+			</member>
+		</members>
+	</team>
+</football>
+
+
+
