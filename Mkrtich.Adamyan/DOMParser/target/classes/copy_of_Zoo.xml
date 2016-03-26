@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animals>
+	<animal category="amphibian">
+		<name>
+			Hellbender
+		</name>
+		<scname>
+			Cryptobranchus alleganiensis
+		</scname>
+		<breeding>
+			<quantity>
+				150-200
+			</quantity>
+			<period>
+				60 days
+			</period>
+		</breeding>
+		<avgWeight>
+			<male>
+				2.5
+			</male>
+			<female>
+				1.5
+			</female>
+		</avgWeight>
+		<description diet="omnivore">
+			
+			The hellbender, also known as the hellbender salamander, is a species of giant salamander endemic to eastern North America.
+		
+		
+	</description>
+	<dngStatus>
+		Near threatened
+	</dngStatus>
+</animal>
+<animal category="amphibian">
+	<name>
+		Vietnamese Moss Frog
+	</name>
+	<scname>
+		Theloderma corticale
+	</scname>
+	<breeding>
+		<quantity>
+			15-20
+		</quantity>
+		<period>
+			3 months
+		</period>
+	</breeding>
+	<avgWeight>
+		<male>
+			0.4
+		</male>
+		<female>
+			0.6
+		</female>
+	</avgWeight>
+	<description diet="omnivore">
+		
+			Theloderma corticale is a species of frog in the Rhacophoridae family. It is found in northern Vietnam and possibly in China and adjacent Laos.
+		
+	</description>
+	<dngStatus>
+		Least Concern
+	</dngStatus>
+</animal>
+</animals>
