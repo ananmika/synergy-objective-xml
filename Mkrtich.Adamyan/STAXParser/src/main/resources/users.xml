@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users>
+	<user>
+		<name id="1">Mkrtich</name>
+		<surname>Adamyan</surname>
+		<gender>M</gender>
+	</user>
+	<user>
+		<name id="2">Narek</name>
+		<surname>Musakhanyan</surname>
+		<gender>M</gender>
+	</user>
+	<user>
+		<name id="3">Anahit</name>
+		<surname>Simonyan</surname>
+		<gender>F</gender>
+	</user>
+	<user>
+		<name id="4">Dan</name>
+		<surname>Balan</surname>
+		<gender>M</gender>
+	</user>
+	<user>
+		<name id="5">Bruce</name>
+		<surname>Wayne</surname>
+		<gender>M</gender>
+	</user>
+</users>
