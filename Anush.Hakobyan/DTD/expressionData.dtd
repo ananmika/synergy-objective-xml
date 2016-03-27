@@ -27,6 +27,6 @@
 <!ATTLIST filter type CDATA #REQUIRED>
 <!ATTLIST filter is-hidden CDATA #FIXED "false">
 <!ATTLIST owner id CDATA #REQUIRED>
-<!ATTLIST owner user-type CDATA #FIXED "USER">
+<!ATTLIST owner user-type (USER | ROLE | GROUP) "USER">
 <!ATTLIST participant id CDATA #REQUIRED>
 <!ATTLIST participant user-type CDATA #REQUIRED>
