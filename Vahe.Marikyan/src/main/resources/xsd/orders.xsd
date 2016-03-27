@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.w3schools.com"
+           xmlns="http://www.w3schools.com"
+           elementFormDefault="qualified">
+
+    <xs:element name="purchases">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="purchase" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="orderDate" type="xs:date"/>
+                            <xs:element name="status" type="statusType"/>
+                            <xs:element name="trackingNumber" type="xs:string"/>
+                            <xs:element name="items">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="item" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="itemName" type="xs:string"/>
+                                                    <xs:element name="size" type="sizeType"/>
+                                                    <xs:element name="price" type="xs:decimal"/>
+                                                    <xs:element name="quantity" type="xs:integer"/>
+                                                    <xs:element name="condition" type="conditionType"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="id" type="xs:integer" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="address" maxOccurs="2" minOccurs="2">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="firstName" type="xs:string"/>
+                                        <xs:element name="lastName" type="xs:string"/>
+                                        <xs:element name="country" type="xs:string"/>
+                                        <xs:element name="city" type="xs:string"/>
+                                        <xs:element name="street" type="xs:string"/>
+                                        <xs:element name="phone" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="type" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="orderSummary">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="subTotal" type="xs:decimal"/>
+                                        <xs:element name="shipping" type="xs:decimal"/>
+                                        <xs:element name="total" type="xs:decimal"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="purchaseOrderNumber" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="sizeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="S"/>
+            <xs:enumeration value="M"/>
+            <xs:enumeration value="L"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="statusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="processing"/>
+            <xs:enumeration value="shipped"/>
+            <xs:enumeration value="delivered"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="conditionType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="new"/>
+            <xs:enumeration value="used"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
