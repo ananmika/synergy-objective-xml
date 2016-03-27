@@ -1,0 +1,32 @@
+<!ELEMENT expressions (expression*)>
+<!ELEMENT expression (alias, value, context, sharingInfo*)>
+<!ELEMENT alias (text+)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT context (contextItem+)>
+<!ELEMENT contextItem (filters*, token)>
+<!ELEMENT filters (operator*, filter+)>
+<!ELEMENT operator (#PCDATA)>
+<!ELEMENT filter (categoryId, values)>
+<!ELEMENT categoryId (#PCDATA)>
+<!ELEMENT values (#PCDATA)>
+<!ELEMENT token (#PCDATA)>
+<!ELEMENT sharingInfo (publicShared, owner, participants*)>
+<!ELEMENT participants (participant+)>
+<!ELEMENT participant (name)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT publicShared (#PCDATA)>
+<!ELEMENT owner (name)>
+
+<!ATTLIST expression id CDATA #REQUIRED>
+<!ATTLIST expression measure-type CDATA #FIXED "NUMERIC">
+<!ATTLIST text languageId CDATA #REQUIRED>
+<!ATTLIST contextItem pathId CDATA #IMPLIED>
+<!ATTLIST contextItem id CDATA #REQUIRED>
+<!ATTLIST filters type CDATA #IMPLIED>
+<!ATTLIST filter type CDATA #REQUIRED>
+<!ATTLIST filter is-hidden CDATA #FIXED "false">
+<!ATTLIST owner id CDATA #REQUIRED>
+<!ATTLIST owner user-type CDATA #FIXED "USER">
+<!ATTLIST participant id CDATA #REQUIRED>
+<!ATTLIST participant user-type CDATA #REQUIRED>
