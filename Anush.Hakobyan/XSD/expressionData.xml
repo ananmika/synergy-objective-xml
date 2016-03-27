@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<expressions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="expressionData.xsd"> 
+	<expression id="7093" measure-type="NUMERIC">
+		<alias>
+		  <text languageId="1">expression for indicator[arm]</text>
+		  <text languageId="2">expression for indicator[ar]</text>
+		  <text languageId="3">expression for indicator[eng]</text>
+		  <text languageId="4">expression for indicator[rus]</text>
+		</alias>
+		<value>commitment + disbursment</value>
+		<context>
+			<contextItem pathId="2339" id="7532">
+				<filters type="operator">
+					<operator>and</operator>
+					<filter type="in" is-hidden="false">
+						<categoryId>2318</categoryId>
+						<values>1</values>
+					</filter>
+					<filter type="in" is-hidden="false">
+						<categoryId>2495</categoryId>
+						<values>3207</values>
+					</filter>
+				</filters>
+				<token>commitment_1</token>
+			</contextItem>
+			<contextItem pathId="2340" id="7533">
+				<token>disbursment_2</token>
+			</contextItem>
+		</context>
+		<sharingInfo>
+			<publicShared>false</publicShared>
+			<owner id="11" user-type="USER" >
+				<name>Active User</name>
+			</owner>
+			<participants>
+				<participant id="12" user-type="USER">
+					<name>Active User2</name>
+				</participant>
+				<participant id="13" user-type="USER">
+					<name>Blocked User2</name>
+				</participant>
+				<participant id="6" user-type="ROLE">
+					<name>Role 5</name>
+				</participant>
+				<participant id="6" user-type="GROUP">
+					<name>Group 10</name>
+				</participant>
+			</participants>
+		</sharingInfo>
+	</expression>
+
+
+	<expression id="7498" measure-type="NUMERIC">
+		<alias>
+		  <text languageId="1">negative value[arm]</text>
+		  <text languageId="2">negative value[ar]</text>
+		  <text languageId="3">negative value[eng]</text>
+		  <text languageId="4">negative value[rus]</text>
+		</alias>
+		<value>280000-cost</value>
+		<context>
+			<contextItem pathId="2338" id="7536">
+				<!-- filter chka-->
+				<token>cost_1</token>
+			</contextItem>
+		</context>
+		<sharingInfo>
+			<publicShared>false</publicShared>
+			<owner id="1" user-type="USER" >
+				<name>Synergy Administrator</name>
+			</owner>
+			<participants>
+				<participant id="2" user-type="USER">
+					<name>Expired User</name>
+				</participant>
+				<participant id="2" user-type="ROLE">
+					<name>Aministrator</name>
+				</participant>
+				<participant id="1" user-type="GROUP">
+					<name>Group 1</name>
+				</participant>
+			</participants> 
+		</sharingInfo>
+	</expression>
+
+	<expression id="7504" measure-type="NUMERIC">
+		<alias>
+		  <text languageId="1">test-expression[arm]</text>
+		  <text languageId="2">test-expression[ar]</text>
+		  <text languageId="3">test-expression[eng]</text>
+		  <text languageId="4">test-expression[rus]</text>
+		</alias>
+		<value>(disbursment/commitment)*100</value>
+		<context>
+			<contextItem pathId="2338" id="7536">
+				<filters type="operator">
+					<operator>or</operator>
+					<filter type="startsWith" is-hidden="false">
+						<categoryId>2318</categoryId>
+						<values>don</values>
+					</filter>
+					<filter type="in" is-hidden="false">
+						<categoryId>2495</categoryId>
+						<values>3207</values>
+					</filter>
+				</filters>
+				<token>cost_1</token>
+			</contextItem>
+		</context>
+	</expression>
+	
+</expressions>

@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!-- Definitions of simple elements -->
+	
+	<xs:element name="value" type="xs:string"/>
+	<xs:element name="categoryId" type="xs:integer"/>
+	<xs:element name="values" type="xs:string"/>
+	<xs:element name="token" type="xs:string" />
+	<xs:element name="publicShared" type="xs:boolean"/>
+	<xs:element name="name" type="xs:string"/>
+	
+	<!-- This is a type definition for user-type attribute-->
+	<xs:simpleType name="user-types">
+		  <xs:restriction base="xs:string">
+			<xs:enumeration value="USER" />
+			<xs:enumeration value="ROLE" />
+			<xs:enumeration value="GROUP" />
+		  </xs:restriction>
+	</xs:simpleType>
+	
+	<!-- Definitions of attributes -->
+	<xs:attribute name="id" type="xs:integer"/>
+	<xs:attribute name="measure-type" type="xs:string" fixed="NUMERIC"/>
+	<xs:attribute name="languageId" type="xs:integer"/>
+	<xs:attribute name="pathId" type="xs:integer"/>
+	<xs:attribute name="type" type="xs:string"/>
+	<xs:attribute name="is-hidden" type="xs:boolean" fixed="false"/>
+	<xs:attribute name="user-type" type="user-types"/> 
+	
+	<!-- Definitions of xml structure and complex elements -->
+	<xs:element name="expressions">
+	  <xs:complexType>
+		<xs:sequence> 
+		  <xs:element name="expression" minOccurs="0" maxOccurs="unbounded">
+			<xs:complexType>
+				<xs:sequence>
+				
+					<xs:element name="alias">
+						<xs:complexType>
+							<xs:sequence>
+							
+								<xs:element name="text" minOccurs="4" maxOccurs="4">
+								  <xs:complexType>
+									<xs:simpleContent>
+									  <xs:extension base="xs:string">
+										<xs:attribute ref="languageId" use="required"/>
+									  </xs:extension>
+									</xs:simpleContent>
+								  </xs:complexType>
+								</xs:element>
+								
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					
+					<xs:element ref="value"/>
+					
+					<xs:element name="context">
+						<xs:complexType>
+							<xs:sequence>
+							
+								<xs:element name="contextItem" minOccurs="0" maxOccurs="unbounded"> 
+									<xs:complexType>
+										<xs:sequence>
+										
+											<xs:element name="filters" minOccurs="0" maxOccurs="1">
+												<xs:complexType>
+													<xs:sequence>
+													
+														<xs:element name="operator" minOccurs="0" maxOccurs="unbounded">
+															<xs:simpleType>
+																<xs:restriction base="xs:string">
+																	<xs:enumeration value="and"/> 
+																	<xs:enumeration value="or" />																	
+																</xs:restriction>
+															</xs:simpleType>
+														</xs:element>
+														
+														
+														<xs:element name="filter"  minOccurs="1" maxOccurs="unbounded">
+															<xs:complexType>
+																<xs:sequence>
+																	<xs:element ref="categoryId"/>
+																	<xs:element ref="values"/>
+																</xs:sequence>
+																<xs:attribute ref="type" use="required"/>
+																<xs:attribute ref="is-hidden"/>
+															</xs:complexType>
+														</xs:element>
+														
+													</xs:sequence>
+													<xs:attribute ref="type"/>
+												</xs:complexType>
+											</xs:element>
+											
+											<xs:element ref="token"/>
+											
+										</xs:sequence>
+										<xs:attribute ref="id" use="required"/>
+										<xs:attribute ref="pathId"/>
+									</xs:complexType>
+								</xs:element>
+								
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					
+					
+					<xs:element name="sharingInfo" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+							
+								<xs:element ref="publicShared"/>
+								
+								<xs:element name="owner">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element ref="name"/>
+										</xs:sequence>
+										<xs:attribute ref="id" use="required"/>
+										<xs:attribute ref="user-type" use="required"/>
+									</xs:complexType>
+								</xs:element>
+								
+								<xs:element name="participants" minOccurs="0" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+										
+											<xs:element name="participant" minOccurs="1" maxOccurs="unbounded">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element ref="name"/>
+													</xs:sequence>
+													<xs:attribute ref="id" use="required"/>
+													<xs:attribute ref="user-type" use="required"/>
+												</xs:complexType>
+											</xs:element>
+											
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					
+					
+				</xs:sequence>
+				 <xs:attribute ref="id" use="required"/>
+				 <xs:attribute ref="measure-type"/>
+			</xs:complexType>
+		  </xs:element>
+		  
+		</xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+	
+</xs:schema>
