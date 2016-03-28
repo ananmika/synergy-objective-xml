@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT animals (animal*)>
+<!ELEMENT animal (name,scname,breeding,avgWeight,description,dngStatus)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT scname (#PCDATA)>
+<!ELEMENT breeding (quantity,period)>
+<!ELEMENT period (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT avgWeight (male,female)>
+<!ELEMENT male (#PCDATA)>
+<!ELEMENT female (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT dngStatus (#PCDATA)>
+
+<!ATTLIST animal category CDATA #REQUIRED>
+<!ATTLIST description diet CDATA #REQUIRED>

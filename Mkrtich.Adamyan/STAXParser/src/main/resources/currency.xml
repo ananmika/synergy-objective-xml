@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<currency>
+	<name id="1">USD</name>
+	<name id="2">AMD</name>
+	<name id="3">RUB</name>
+	<name id="4">YEN</name>
+	<name id="5">EUR</name>
+	<name id="6">GBR</name>
+</currency>
