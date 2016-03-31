@@ -7,14 +7,13 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 
 /**
  * Created by Tatevik
  * since  01-Apr-16.
  */
 public class SAXMainHousehold {
-    public static final String FILE_PATH = "src/main/resources/xsd/household.xml";
+    public static final String FILE_PATH = "src/main/resources/dtd/household.xml";
 
     public static void main(String[] args) {
         SAXParserFactory factory = SAXParserFactory.newInstance();
