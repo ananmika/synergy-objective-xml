@@ -1,0 +1,33 @@
+<!ELEMENT houses (house)*>
+
+<!ELEMENT house (house_address, house_datils, sellers, price, sale_price)>
+<!ATTLIST house code CDATA #REQUIRED>
+<!ATTLIST house sale CDATA #REQUIRED>
+
+<!ELEMENT house_address (country, city, state, road, postcode)>
+
+<!ELEMENT house_datils (bedrooms, bathrooms, living_space)>
+<!ELEMENT bedrooms (#PCDATA)>
+<!ELEMENT bathrooms (#PCDATA)>
+<!ELEMENT living_space (#PCDATA)>
+
+<!ELEMENT sellers (seller)+>
+<!ELEMENT seller (name, phone, email, address)>
+<!ATTLIST seller is_active CDATA #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST phone type (home | work | mobile) #REQUIRED>
+
+<!ELEMENT address (country| city| state | road | postcode)*>
+<!ATTLIST address type (home | work) #REQUIRED>
+
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT sale_price (#PCDATA)>
+
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT road (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT postcode (#PCDATA)>

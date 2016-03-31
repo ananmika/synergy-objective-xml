@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="house-selling.xsl"?>
+
+<houses>
+    <house code="CK00112" sale="true">
+        <house_address>
+            <country>United State America</country>
+            <city>New York</city>
+            <state>Wildey</state>
+            <road>Business Park</road>
+            <postcode>P.O. Box 302</postcode>
+        </house_address>
+        <house_datils>
+            <bedrooms>5</bedrooms>
+            <bathrooms>2</bathrooms>
+            <living_space>2560</living_space>
+        </house_datils>
+        <sellers>
+            <seller is_active="true">
+                <name>John Smith</name>
+                <phone type="home">(206) 123-4567</phone>
+                <email>johnsmith@gmail.com</email>
+                <address type="home">
+                    <state>Washington</state>
+                    <road>123 Oak St. </road>
+                </address>
+            </seller>
+            <seller is_active="false">
+                <name>Peter Furst</name>
+                <phone type="mobile">(206) 433-4547</phone>
+                <email>peterfurst@yahoo.com</email>
+                <address type="work">
+                    <state>California</state>
+                    <road>456 Pine Av. </road>
+                </address>
+            </seller>
+        </sellers>
+        <price>190000</price>
+        <sale_price>175000</sale_price>
+    </house>
+
+    <house code="AC02235" sale="false">
+        <house_address>
+            <country>United Kingdom</country>
+            <city>London</city>
+            <state>Cornwall</state>
+            <road>6984 4th St.</road>
+            <postcode>P.O. Box 101</postcode>
+        </house_address>
+        <house_datils>
+            <bedrooms>4</bedrooms>
+            <bathrooms>1</bathrooms>
+            <living_space>1940</living_space>
+        </house_datils>
+        <sellers>
+            <seller is_active="false">
+                <name>Albert Aikens</name>
+                <phone type="home">(206) 583-0012</phone>
+                <email>albertaikens@gmail.com</email>
+                <address type="home">
+                    <city>Liverpool </city>
+                    <road>9876 Main St. </road>
+                </address>
+            </seller>
+            <seller is_active="true">
+                <name>Dan Russell</name>
+                <phone type="home">(206) 113-5228</phone>
+                <email>danrussell@gmail.com</email>
+                <address type="work">
+                    <city>Chelsea </city>
+                    <road>6984 4th St. </road>
+                </address>
+            </seller>
+            <seller is_active="true">
+                <name>Zack Zwyker</name>
+                <phone type="mobile">(206) 263-4451</phone>
+                <email>zackzwyker@gmail.com</email>
+                <address type="home">
+                    <city>Manchester </city>
+                    <road>368 Elm St. </road>
+                </address>
+            </seller>
+        </sellers>
+        <price>155000</price>
+        <sale_price></sale_price>
+    </house>
+
+    <house code="SH243356" sale="true">
+        <house_address>
+            <country>Indonesia</country>
+            <city>Bali Island</city>
+            <state>Cornwall</state>
+            <road>Middle of the Beach</road>
+            <postcode>Unreachable</postcode>
+        </house_address>
+        <house_datils>
+            <bedrooms>2</bedrooms>
+            <bathrooms>1</bathrooms>
+            <living_space>320</living_space>
+        </house_datils>
+        <sellers>
+            <seller is_active="true">
+                <name>Melanie Martinez</name>
+                <phone type="home">(203) 425-7855</phone>
+                <email>melanieMartinez@gmail.com</email>
+                <address type="work">
+                    <country>Indonesia </country>
+                    <city>Surabaya </city>
+                    <road>Laksamana </road>
+                </address>
+            </seller>
+            <seller is_active="false">
+                <name>Max Milner</name>
+                <phone type="mobile">(203) 135-2635</phone>
+                <email>maxMilner@mail.ru</email>
+                <address type="home">
+                    <country>Indonesia </country>
+                    <city>Balikpapan </city>
+                    <road>Mahakam </road>
+                </address>
+            </seller>
+        </sellers>
+        <price>140000000</price>
+        <sale_price>139000000</sale_price>
+    </house>
+
+    <house code="HG11025" sale="false">
+        <house_address>
+            <country>Greece</country>
+            <city>Santorini Island</city>
+            <state>Cornwall</state>
+            <road>South Aegean</road>
+            <postcode>P.O. Box 002</postcode>
+        </house_address>
+        <house_datils>
+            <bedrooms>3</bedrooms>
+            <bathrooms>1</bathrooms>
+            <living_space>263</living_space>
+        </house_datils>
+        <sellers>
+            <seller is_active="true">
+                <name>Zella Day</name>
+                <phone type="home">(205) 896-4132</phone>
+                <email>zellaDay@gmail.com</email>
+                <address type="work">
+                    <country>Greece </country>
+                    <city>Athens </city>
+                    <road>Kolokotroni </road>
+                </address>
+            </seller>
+        </sellers>
+        <price>1100000</price>
+        <sale_price></sale_price>
+    </house>
+</houses>

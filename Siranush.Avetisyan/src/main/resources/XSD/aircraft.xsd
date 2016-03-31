@@ -1,0 +1,107 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3schools.com"
+           xmlns="http://www.w3schools.com" elementFormDefault="qualified">
+
+    <xs:element name="aircraft">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="persons">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name='person' type='personInfo' minOccurs='0' maxOccurs='unbounded'/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="planes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name='plane' type='planeInfo' minOccurs='0' maxOccurs='unbounded'/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:unique name="personUniqueId">
+            <xs:selector xpath="person"/>
+            <xs:field xpath="@personId"/>
+        </xs:unique>
+
+        <xs:key name='personIdKey'>
+            <xs:selector xpath='persons/person'/>
+            <xs:field xpath='@personId'/>
+        </xs:key>
+        <xs:keyref name='personIdKeyRef' refer='personIdKey'>
+            <xs:selector xpath='planes/plane'/>
+            <xs:field xpath='mainPilotId'/>
+        </xs:keyref>
+    </xs:element>
+
+    <xs:simpleType name="genderType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="male|female"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9_.]+@[a-zA-Z0-9.]+\.[a-zA-Z]{2,4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="addressType">
+        <xs:sequence>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="street" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="country" type="xs:NMTOKEN" default="UK"/>
+    </xs:complexType>
+
+    <xs:complexType name="personInfo">
+        <xs:sequence>
+            <xs:element name="fullName" type="xs:string"/>
+            <xs:element name="nationIdCard" type="xs:string"/>
+            <xs:element name="birthDate" type="xs:date"/>
+            <xs:element name="gender" type="genderType"/>
+            <xs:element name="email" type="emailType"/>
+            <xs:element name="address" type="addressType"/>
+        </xs:sequence>
+        <xs:attribute name='personId' type='xs:positiveInteger' use="required"/>
+        <xs:attribute name='position' use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="pilot"/>
+                    <xs:enumeration value="stewardess"/>
+                    <xs:enumeration value="administrator"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="planeInfo">
+        <xs:sequence>
+            <xs:element name="model" type="xs:string"/>
+            <xs:element name="mainPilotId" type="xs:positiveInteger"/>
+            <xs:element name="from" type="addressType"/>
+            <xs:element name="start_time" type="xs:dateTime"/>
+            <xs:element name="to" type="addressType"/>
+            <!--<xs:element name="end_time" type="xs:dateTime"/>-->
+            <xs:element name="end_time">
+                <xs:simpleType>
+                    <xs:restriction base="xs:dateTime">
+                        <xs:minExclusive value="start_time"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="passenger_count">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="1"/>
+                        <xs:maxInclusive value="1000"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name='rating' type='xs:integer' use="required"/>
+    </xs:complexType>
+
+</xs:schema>
