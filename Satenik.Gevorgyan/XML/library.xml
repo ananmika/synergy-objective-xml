@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="displayStyle.xsl"?>
+<!DOCTYPE libraryBooks SYSTEM "library_dtd.dtd">
+
+<libraryBooks>  
+<category title="Databse" number="001">
+	  <books>
+		  <book id="b0836217462" available="true" img="DB2">
+		  <isbn>ISBN: 978-0-7356-5818-9</isbn>
+		  <title lang="en">Microsoft SQL Server 2012 Analysis Services </title>
+		  <subTitle lang="en">The BISM Tabular Model </subTitle>
+		  <price currency="USD">9.5</price>
+		  <publisherHouse>Reilly Media, Inc.</publisherHouse>
+		  <publishingYear>2010</publishingYear>
+		  <printedPlace>Uniteed Kingdom of England</printedPlace>
+		  <illustrator>nSight, Inc.</illustrator>
+		  <ramainingQuantity>18</ramainingQuantity>
+		  <sold>152</sold>
+			  <authors>
+				  <author>
+					  <name>Marco Russo</name>
+					  <birthDate>01/10/1970</birthDate>
+					  <nationality>Germany</nationality>
+				  </author>
+				  <author>
+					  <name>Alberto Ferrari</name>
+					  <birthDate>21/10/1954</birthDate>
+					  <nationality>Germany</nationality>
+				  </author>
+				  <author>
+					  <name>Criss Webb</name>
+					  <birthDate>06/02/1981</birthDate>
+					  <nationality>Germany</nationality>
+				  </author>
+			  </authors>
+		  </book> 
+		 
+		 <book id="b0836217333" available="False" img="DB1">
+		  <isbn>ISBN: 978-0-7356-0001-2</isbn>
+		  <title lang="en">Expert Performance Indexing</title>
+		  <subTitle lang="en">for SQL Server 2012</subTitle>
+		  <price currency="USD">18</price>
+		  <publisherHouse>Apress, Inc.</publisherHouse>
+		  <publishingYear>2008</publishingYear>
+		  <printedPlace>Germny</printedPlace>
+		  <illustrator>nSight, Inc.</illustrator>
+		  <ramainingQuantity>55</ramainingQuantity>
+		  <sold>100</sold>
+			  <authors>
+				  <author>
+					  <name>Jason Trate</name>
+					  <birthDate>05/05/1976</birthDate>
+					  <nationality>French</nationality>
+				  </author>
+				  <author>
+					  <name>Ted Krueger</name>
+					  <birthDate>21/12/1960</birthDate>
+					  <nationality>American</nationality>
+				  </author>				  
+			  </authors>
+		  </book>
+	  </books>
+  </category>
+  
+  
+  <category title="Human Resources" number="002">
+	  <books>
+		  <book id="b0818717462" available="true" img="HR1">
+		  <isbn>ISBN: 978-0-2856-8518-2</isbn>
+		  <title lang="en">The HR Function of the Future</title>
+		  <subTitle lang="en">Develop your skills</subTitle>
+		  <price currency="USD">28</price>
+		  <publisherHouse>Orange Media, Inc.</publisherHouse>
+		  <publishingYear>2015</publishingYear>
+		  <printedPlace>Albania</printedPlace>
+		  <illustrator>Orange, Inc.</illustrator>
+		  <ramainingQuantity>50</ramainingQuantity>
+		  <sold>2</sold>
+			  <authors>
+				  <author>
+					  <name>Vincent O.Abella</name>
+					  <birthDate>6/11/1985</birthDate>
+					  <nationality>Italian</nationality>
+				  </author>				  
+			  </authors>
+		  </book> 
+	  </books>
+  </category>
+  
+  <category title="Project management" number="003">
+	  <books>
+		  <book id="b1358717874" available="true" img="DM1">
+		  <isbn>ISBN: 978-0-0258-98751-2</isbn>
+		  <title lang="en">Essential Scrum</title>
+		  <subTitle lang="en">A Practical Guide to the Most Popilar Agile Process</subTitle>
+		  <price currency="USD">45.9</price>
+		  <publisherHouse>Pearson Education, Inc.</publisherHouse>
+		  <publishingYear>2013</publishingYear>
+		  <printedPlace>United States</printedPlace>
+		  <illustrator>Allias, Inc.</illustrator>
+		  <ramainingQuantity>250</ramainingQuantity>
+		  <sold>183</sold>
+			  <authors>
+				  <author>
+					  <name>Kenneth S.Rubin</name>
+					  <birthDate>5/12/1973</birthDate>
+					  <nationality>American</nationality>
+				  </author>				  
+			  </authors>
+		  </book> 
+	  </books>
+  </category>
+</libraryBooks>

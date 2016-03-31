@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT library (category*)>
+<!ELEMENT category (books)>
+<!ELEMENT books (book*)>
+<!ELEMENT book (isbn,title,subTitle,price,publisherHouse,publishingYear,printedPlace,illustrator,ramainingQuantity,sold,authors)>
+<!ELEMENT authors (author*)>
+<!ELEMENT author (name,birthDate,nationality)>
+		
+		<!ELEMENT isbn (#PCDATA)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT subTitle (#PCDATA)>
+		<!ELEMENT price (#PCDATA)>
+		<!ELEMENT publisherHouse (#PCDATA)>
+		<!ELEMENT publishingYear (#PCDATA)>	
+		<!ELEMENT printedPlace (#PCDATA)>
+		<!ELEMENT illustrator (#PCDATA)>
+		<!ELEMENT ramainingQuantity (#PCDATA)>
+		<!ELEMENT sold (#PCDATA)>
+		
+		<!ELEMENT name (#PCDATA)>
+		<!ELEMENT birthDate (#PCDATA)>
+		<!ELEMENT nationality (#PCDATA)>
+		
+		<!ATTLIST category tite CDATA #REQUIRED>
+		<!ATTLIST category number CDATA #REQUIRED>
+		
+		<!ATTLIST book id CDATA #REQUIRED>
+		<!ATTLIST book available CDATA #REQUIRED>
+		<!ATTLIST book img CDATA #REQUIRED>
+
+		<!ATTLIST title lang CDATA #REQUIRED>
+		<!ATTLIST subTitle lang CDATA #REQUIRED>
+		<!ATTLIST price currency CDATA #REQUIRED>
