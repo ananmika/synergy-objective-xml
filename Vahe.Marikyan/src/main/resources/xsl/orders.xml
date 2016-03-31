@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="orders.xsl"?>
 
 <purchases>
-    <purchase purchaseOrderNumber="UO23646391">
+    <purchase purchaseOrderNumber="UO11111111">
         <orderDate>2016-03-14</orderDate>
         <status>shipped</status>
         <trackingNumber>LT6784868324CK</trackingNumber>
@@ -44,7 +44,7 @@
             <total>91</total>
         </orderSummary>
     </purchase>
-    <purchase purchaseOrderNumber="UO23646391">
+    <purchase purchaseOrderNumber="UO22222222">
         <orderDate>2016-03-14</orderDate>
         <status>shipped</status>
         <trackingNumber>LS678488888CN</trackingNumber>
