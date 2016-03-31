@@ -22,11 +22,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="objective-xml" />
+        <module name="Sax" />
         <module name="Tatevik.Marikyan" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Tatevik.Marikyan" target="1.5" />
+      <module name="objective-xml" target="1.7" />
+      <module name="Sax" target="1.7" />
+      <module name="Tatevik.Marikyan" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

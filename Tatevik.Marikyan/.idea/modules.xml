@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Mkrtich.Adamyan/SAXParser/Sax.iml" filepath="$PROJECT_DIR$/../Mkrtich.Adamyan/SAXParser/Sax.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tatevik.Marikyan.iml" filepath="$PROJECT_DIR$/Tatevik.Marikyan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Siranush.Avetisyan/objective-xml.iml" filepath="$PROJECT_DIR$/../Siranush.Avetisyan/objective-xml.iml" />
     </modules>
   </component>
 </project>
