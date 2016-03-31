@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<household>
+
+    <description>
+        Someone's household description
+    </description>
+
+    <person id="1" category="Applicant">
+        <firstName>Andy</firstName>
+        <lastName>White</lastName>
+        <dateOfBirth>1990-01-01</dateOfBirth>
+        <age>26</age>
+        <nib>AA001122</nib>
+        <gender>Male</gender>
+        <nationality>Armenian</nationality>
+        <address>Yerevan</address>
+        <email>AndyWhite@aaa.com</email>
+    </person>
+
+    <householdMembers>
+        <person id="2" category="Father" householdHead="true">
+            <firstName>Bill</firstName>
+            <lastName>Collins1</lastName>
+            <dateOfBirth>1951-01-01</dateOfBirth>
+            <age>65</age>
+            <nib>BB001122</nib>
+            <gender>Male</gender>
+            <nationality>American</nationality>
+        </person>
+        <person id="3" category="Mother">
+            <firstName>Clara</firstName>
+            <lastName>Collins</lastName>
+            <dateOfBirth>1959-01-01</dateOfBirth>
+            <age>57</age>
+            <nib>CC001122</nib>
+            <gender>Female</gender>
+            <nationality>American</nationality>
+        </person>
+        <person id="4" category="Daughter">
+            <firstName>Diana</firstName>
+            <lastName>Collins</lastName>
+            <dateOfBirth>1990-01-01</dateOfBirth>
+            <age>26</age>
+            <nib>DD001122</nib>
+            <gender>Female</gender>
+            <nationality>American</nationality>
+        </person>
+        <person id="5" category="Son">
+            <firstName>Emil</firstName>
+            <lastName>Collins</lastName>
+            <dateOfBirth>1993-01-01</dateOfBirth>
+            <age>23</age>
+            <nib>EE001122</nib>
+            <gender>Male</gender>
+            <nationality>American</nationality>
+        </person>
+    </householdMembers>
+</household>
