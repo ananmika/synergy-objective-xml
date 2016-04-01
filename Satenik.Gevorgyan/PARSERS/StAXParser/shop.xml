@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shop>  
+	<department name="Dairy" type="dairy" img="dairy">
+		<productors>
+			<productor productorName="Marianna">
+				<goods>
+						  <good goodName= "Macuni">
+								  <productDate>20/03/2016</productDate>
+								  <expireDate>04/04/2016</expireDate>
+								  <size measurement="litr">0.5</size>
+								  <price>270</price>
+						  </good>
+						  <good goodName= "Sourcream">
+								  <productDate>20/03/2016</productDate>
+								  <expireDate>01/04/2016</expireDate>
+								  <size measurement="litr">0.5</size>
+								  <price>350</price>
+						  </good>		
+							<good goodName= "Milk">
+								  <productDate>20/03/2016</productDate>
+								  <expireDate>25/03/2016</expireDate>
+								  <size measurement="litr">1</size>
+								  <price>450</price>
+						  </good>							  
+				</goods>
+			</productor>
+			<productor productorName="Tamara">
+				<goods>
+						  <good goodName= "Macuni">
+								  <productDate>21/03/2016</productDate>
+								  <expireDate>01/04/2016</expireDate>
+								  <size measurement="litr">0.5</size>
+								  <price>290</price>
+						  </good>
+						  <good goodName= "Sourcream">
+								  <productDate>20/03/2016</productDate>
+								  <expireDate>01/04/2016</expireDate>
+								  <size measurement="litr">0.25</size>
+								  <price>210</price>
+						  </good>	
+								<good goodName= "Milk">
+								  <productDate>20/03/2016</productDate>
+								  <expireDate>25/03/2016</expireDate>
+								  <size measurement="litr">1</size>
+								  <price>470</price>
+						  </good>	
+							<good goodName= "Curd">
+								  <productDate>22/03/2016</productDate>
+								  <expireDate>29/03/2016</expireDate>
+								  <size measurement="litr">0.5</size>
+								  <price>350</price>
+						  </good>							  
+				</goods>
+			</productor>
+		</productors>
+	</department>
+	
+	<department name="Meat" type="meat" img="meat">
+		<productors>
+			<productor productorName="Bari Samaraci">
+				<goods>
+						  <good goodName= "Gyumri">
+								  <productDate>20/03/2016</productDate>
+								  <expireDate>20/12/2016</expireDate>
+								  <size measurement="kg">1</size>
+								  <price>5100</price>
+						  </good>
+						  <good goodName= "Doctors">
+								  <productDate>20/03/2016</productDate>
+								  <expireDate>20/06/2016</expireDate>
+								  <size measurement="litr">0.5</size>
+								  <price>3500</price>
+						  </good>					  
+				</goods>
+			</productor>
+			<productor productorName="Biela">
+				<goods>
+						  <good goodName= "Classic">
+								  <productDate>21/03/2016</productDate>
+								  <expireDate>06/06/2016</expireDate>
+								  <size measurement="kg">1</size>
+								  <price>2900</price>
+						  </good>
+						  <good goodName= "Spisy">
+								  <productDate>20/03/2016</productDate>
+								  <expireDate>20/09/2016</expireDate>
+								  <size measurement="kg">1</size>
+								  <price>1500</price>
+						  </good>	
+								<good goodName= "Frankfurters">
+								  <productDate>20/03/2016</productDate>
+								  <expireDate>25/05/2016</expireDate>
+								  <size measurement="kg">1</size>
+								  <price>4900</price>
+						  </good>					  
+				</goods>
+			</productor>
+		</productors>
+	</department>
+	
+	<department name="Bakery" type="bakery" img="bakery">
+		<productors>
+			<productor productorName="Luxeria">
+				<goods>
+						  <good goodName= "Crackers">
+								  <productDate>01/02/2016</productDate>
+								  <expireDate>01/06/2016</expireDate>
+								  <size measurement="box">1</size>
+								  <price>300</price>
+						  </good>
+						  <good goodName= "Cake">
+								  <productDate>20/03/2016</productDate>
+								  <expireDate>20/06/2016</expireDate>
+								  <size measurement="piece">1</size>
+								  <price>1200</price>
+						  </good>					  
+				</goods>
+			</productor>
+			<productor productorName="Tamara">
+				<goods>
+						  <good goodName= "Crackers">
+								  <productDate>03/03/2016</productDate>
+								  <expireDate>03/09/2016</expireDate>
+								  <size measurement="box">1</size>
+								  <price>500</price>
+						  </good>
+						  <good goodName= "Biscuit">
+								  <productDate>20/03/2016</productDate>
+								  <expireDate>29/03/2016</expireDate>
+								  <size measurement="kg">1</size>
+								  <price>450</price>
+						  </good>	
+								<good goodName= "Wafels">
+								  <productDate>01/03/2016</productDate>
+								  <expireDate>01/05/2016</expireDate>
+								  <size measurement="kg">1</size>
+								  <price>1500</price>
+						  </good>					  
+				</goods>
+			</productor>
+		</productors>
+	</department>
+  </shop>
+  
