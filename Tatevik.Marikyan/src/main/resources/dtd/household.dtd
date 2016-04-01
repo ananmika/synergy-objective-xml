@@ -1,0 +1,16 @@
+<!ELEMENT household (description?, person+, householdMembers)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT householdMembers (person+)>
+<!ELEMENT person (firstName, lastName, dateOfBirth, age, nib, gender, nationality)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT dateOfBirth (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT nib (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT nationality (#PCDATA)>
+
+<!ATTLIST person
+        id CDATA #REQUIRED
+        category (Father | Mother | Daughter | Son | Aunt | Auncle | Applicant) #REQUIRED
+        householdHead (true | false) #IMPLIED>

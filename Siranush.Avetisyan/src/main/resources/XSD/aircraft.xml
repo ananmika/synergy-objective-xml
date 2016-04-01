@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aircraft xmlns="http://www.w3schools.com"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="aircraft.xsd">
+    <persons>
+        <person personId="1" position="administrator">
+            <fullName>Melissa MacBeth</fullName>
+            <nationIdCard>JK024122</nationIdCard>
+            <birthDate>1970-02-11</birthDate>
+            <gender>female</gender>
+            <email>melissa@contoso.com</email>
+            <address>
+                <city>London</city>
+                <street>456 Pine Av.</street>
+            </address>
+        </person>
+        <person personId="2" position="pilot">
+            <fullName>Mark Muller</fullName>
+            <nationIdCard>FT120356</nationIdCard>
+            <birthDate>1993-02-01</birthDate>
+            <gender>male</gender>
+            <email>markMuller@gmail.com</email>
+            <address country="US">
+                <city>New York</city>
+                <street>9876 Main St.</street>
+            </address>
+        </person>
+        <person personId="3" position="stewardess">
+            <fullName>Alice Smith</fullName>
+            <nationIdCard>GH001423</nationIdCard>
+            <birthDate>1988-03-15</birthDate>
+            <gender>female</gender>
+            <email>aliceSmith@contoso.com</email>
+            <address country="Czech">
+                <city>Prague</city>
+                <street>368 Elm St.</street>
+            </address>
+        </person>
+        <person personId="4" position="pilot">
+            <fullName>Michael Affronti</fullName>
+            <nationIdCard>DF256310</nationIdCard>
+            <birthDate>1980-09-10</birthDate>
+            <gender>male</gender>
+            <email>michael@fabrikam.com</email>
+            <address country="Japan">
+                <city>Tokio</city>
+                <street>6984 4th St.</street>
+            </address>
+        </person>
+        <person personId="5" position="pilot">
+            <fullName>John Doe</fullName>
+            <nationIdCard>VB12305</nationIdCard>
+            <birthDate>1975-05-23</birthDate>
+            <gender>male</gender>
+            <email>johnDoe@adventureworks.com</email>
+            <address country="Italy">
+                <city>Rome</city>
+                <street>123 Oak St.</street>
+            </address>
+        </person>
+        <person personId="6" position="stewardess">
+            <fullName>Emma Jones</fullName>
+            <nationIdCard>YU256300</nationIdCard>
+            <birthDate>1984-11-02</birthDate>
+            <gender>female</gender>
+            <email>emmaJones@fabrikam.com</email>
+            <address>
+                <city>Liverpool</city>
+                <street>23 Maple Street</street>
+            </address>
+        </person>
+        <person personId="7" position="pilot">
+            <fullName>Robert Smith</fullName>
+            <nationIdCard>WR187522</nationIdCard>
+            <birthDate>1974-06-17</birthDate>
+            <gender>male</gender>
+            <email>robertSmith@gmail.com</email>
+            <address country="Portugal">
+                <city>Lisabon</city>
+                <street>8 Oak Avenue</street>
+            </address>
+        </person>
+    </persons>
+
+    <planes>
+        <plane rating="1230">
+            <model>SKR837</model>
+            <mainPilotId>5</mainPilotId>
+            <from country="Armenia">
+                <city>Yerevan</city>
+                <street/>
+            </from>
+            <start_time>2016-03-16T09:00:00</start_time>
+            <to country="US">
+                <city>Los Angeles</city>
+                <street/>
+            </to>
+            <end_time>2016-03-16T13:00:00</end_time>
+            <passenger_count>123</passenger_count>
+        </plane>
+        <plane rating="2052">
+            <model>Boeing787</model>
+            <mainPilotId>5</mainPilotId>
+            <from country="Armenia">
+                <city>Yerevan</city>
+                <street/>
+            </from>
+            <start_time>2016-04-02T08:30:00</start_time>
+            <to country="Russia">
+                <city>Moscow</city>
+                <street/>
+            </to>
+            <end_time>2016-04-02T12:00:00</end_time>
+            <passenger_count>180</passenger_count>
+        </plane>
+        <plane rating="1499">
+            <model>PGR311</model>
+            <mainPilotId>7</mainPilotId>
+            <from>
+                <city>Manchester</city>
+                <street/>
+            </from>
+            <start_time>2016-08-25T12:00:00</start_time>
+            <to country="Maldives">
+                <city>Malé</city>
+                <street/>
+            </to>
+            <end_time>2016-08-25T15:30:00</end_time>
+            <passenger_count>260</passenger_count>
+        </plane>
+    </planes>
+</aircraft>

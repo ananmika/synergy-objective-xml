@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+    <book id="001" lang="ENG">
+        <isbn>11-110-539-1</isbn>
+        <regDate>2016-03-31</regDate>
+        <title>Design Patterns</title>
+        <publisher country="USA">O'REILLY</publisher>
+        <price>45</price>
+        <authors>
+            <author>Eric Freeman</author>
+            <author>Elisabeth Freeman</author>
+        </authors>
+    </book>
+    <book id="002" lang="ENG">
+        <isbn>0-13-093538-7</isbn>
+        <regDate>2001-12-01</regDate>
+        <title>Applied Java Patterns</title>
+        <publisher country="USA">Prentice Hall PTR</publisher>
+        <price>50</price>
+        <authors>
+            <author>Stephen Steiling</author>
+            <author>Olav Maassen</author>
+        </authors>
+    </book>
+</catalog>

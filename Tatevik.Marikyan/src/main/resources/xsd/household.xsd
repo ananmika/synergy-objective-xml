@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://com.synisys.org/objectives/xml/1.0.0">
+
+    <xs:element name="household">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="description" type="xs:string"/>
+                <xs:element name="person" type="fullPersonInfo"/>
+                <xs:element name="householdMembers" type="householdMemberTypes" maxOccurs="1" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="householdMemberTypes">
+        <xs:sequence>
+            <xs:element name="person" type="personInfo" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="personInfo">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="dateOfBirth" type="xs:date"/>
+            <xs:element name="age" type="ageType"/>
+            <xs:element name="nib" type="nibType"/>
+            <xs:element name="gender" type="genderTypes"/>
+            <xs:element name="nationality" type="nationalityTypes"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="category" type="categoryTypes" use="required"/>
+        <xs:attribute name="householdHead" type="xs:boolean" use="optional" default="false"/>
+    </xs:complexType>
+
+    <xs:complexType name="fullPersonInfo">
+        <xs:complexContent>
+            <xs:extension base="personInfo">
+                <xs:sequence>
+                    <xs:element name="address" type="xs:string"/>
+                    <xs:element name="email" type="emailType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:simpleType name="ageType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxExclusive value="120"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="nationalityTypes">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="American"/>
+            <xs:enumeration value="Armenian"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="genderTypes">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Male"/>
+            <xs:enumeration value="Female"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="categoryTypes">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Father"/>
+            <xs:enumeration value="Mother"/>
+            <xs:enumeration value="Daughter"/>
+            <xs:enumeration value="Son"/>
+            <xs:enumeration value="Aunt"/>
+            <xs:enumeration value="Uncle"/>
+            <xs:enumeration value="Applicant"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="nibType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9]{8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

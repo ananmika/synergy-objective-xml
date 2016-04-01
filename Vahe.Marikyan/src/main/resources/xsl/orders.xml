@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="orders.xsl"?>
+
+<purchases>
+    <purchase purchaseOrderNumber="UO11111111">
+        <orderDate>2016-03-14</orderDate>
+        <status>shipped</status>
+        <trackingNumber>LT6784868324CK</trackingNumber>
+        <items>
+            <item id="1">
+                <itemName>LIFE Wave And Sun Tee</itemName>
+                <size>M</size>
+                <price>28</price>
+                <quantity>1</quantity>
+                <condition>new</condition>
+            </item>
+            <item id="2">
+                <itemName>CM Crewneck</itemName>
+                <size>S</size>
+                <price>58</price>
+                <quantity>1</quantity>
+                <condition>used</condition>
+            </item>
+        </items>
+        <address type="shipping">
+            <firstName>Vahe</firstName>
+            <lastName>Marikyan</lastName>
+            <country>USA</country>
+            <city>Wilmington</city>
+            <street>4 lewis cir</street>
+            <phone>3029300705</phone>
+        </address>
+        <address type="billing">
+            <firstName>Vahe</firstName>
+            <lastName>Marikyan</lastName>
+            <country>Armenia</country>
+            <city>Yerevan</city>
+            <street>Kasyan 6-29</street>
+            <phone>37477977156</phone>
+        </address>
+        <orderSummary>
+            <subTotal>86</subTotal>
+            <shipping>5</shipping>
+            <total>91</total>
+        </orderSummary>
+    </purchase>
+    <purchase purchaseOrderNumber="UO22222222">
+        <orderDate>2016-03-14</orderDate>
+        <status>shipped</status>
+        <trackingNumber>LS678488888CN</trackingNumber>
+        <items>
+            <item id="1">
+                <itemName>sock</itemName>
+                <size>M</size>
+                <price>5</price>
+                <quantity>2</quantity>
+                <condition>new</condition>
+            </item>
+        </items>
+        <address type="shipping">
+            <firstName>Vahe</firstName>
+            <lastName>Marikyan</lastName>
+            <country>USA</country>
+            <city>Wilmington</city>
+            <street>4 lewis cir</street>
+            <phone>3029300705</phone>
+        </address>
+        <address type="billing">
+            <firstName>Vahe</firstName>
+            <lastName>Marikyan</lastName>
+            <country>Armenia</country>
+            <city>Yerevan</city>
+            <street>Kasyan 6-29</street>
+            <phone>37477977156</phone>
+        </address>
+        <orderSummary>
+            <subTotal>10</subTotal>
+            <shipping>5</shipping>
+            <total>15</total>
+        </orderSummary>
+    </purchase>
+</purchases>
+
+

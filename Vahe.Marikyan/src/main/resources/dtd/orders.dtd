@@ -1,0 +1,29 @@
+<!--Elements-->
+<!ELEMENT purchases (purchase+)>
+<!ELEMENT purchase (orderDate, status, trackingNumber, items, address+, orderSummary)>
+<!ELEMENT orderDate (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT trackingNumber (#PCDATA)>
+<!ELEMENT items (item+)>
+<!ELEMENT item (itemName, size, price, quantity, condition)>
+<!ELEMENT itemName (#PCDATA)>
+<!ELEMENT size (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT condition (#PCDATA)>
+<!ELEMENT address (firstName, lastName, country, city, street, phone)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT orderSummary (subTotal, shipping, total)>
+<!ELEMENT subTotal (#PCDATA)>
+<!ELEMENT shipping (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+
+<!--Attributes-->
+<!ATTLIST purchase purchaseOrderNumber CDATA #REQUIRED>
+<!ATTLIST item id CDATA #REQUIRED>
+<!ATTLIST address type CDATA #REQUIRED>
