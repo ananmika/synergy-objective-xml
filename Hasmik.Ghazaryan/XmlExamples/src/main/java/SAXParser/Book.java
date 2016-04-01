@@ -21,10 +21,25 @@ public class Book {
     public Book(String id, String lang) {
         this.id = id;
         this.lang = lang;
+        this.authors = new ArrayList<String>();
     }
 
     public Book(){
-        authors=new ArrayList<String>();
+        authors = new ArrayList<String>();
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id='" + id + '\'' +
+                ", lang='" + lang + '\'' +
+                ", title='" + title + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", regDate=" + regDate +
+                ", publisher='" + publisher + '\'' +
+                ", price=" + price +
+                ", authors=" + authors +
+                '}';
     }
 
     public String getId() {

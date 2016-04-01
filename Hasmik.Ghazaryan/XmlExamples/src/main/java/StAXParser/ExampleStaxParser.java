@@ -1,6 +1,6 @@
 package main.java.StAXParser;
 
-import main.java.SAX.Book;
+import main.java.SAXParser.Book;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
@@ -13,7 +13,6 @@ import java.io.FileReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -28,7 +27,7 @@ public class ExampleStaxParser {
 
         try {
             XMLInputFactory factory = XMLInputFactory.newInstance();
-            XMLEventReader eventReader = factory.createXMLEventReader(new FileReader("main/resources/catalog.xml"));
+            XMLEventReader eventReader = factory.createXMLEventReader(new FileReader("src/main/resources/catalog.xml"));
 
             while(eventReader.hasNext()){
                 XMLEvent event = eventReader.nextEvent();
@@ -73,6 +72,8 @@ public class ExampleStaxParser {
                             books.add(book);
                         }
                         break;
+                    case  XMLStreamConstants.START_DOCUMENT:
+                        break;
                 }
             }
         } catch (FileNotFoundException e) {
@@ -81,6 +82,6 @@ public class ExampleStaxParser {
             e.printStackTrace();
         }
 
-        /////// Do something with this list :)))
+        /////// Do something with this list of Books :)))
     }
 }

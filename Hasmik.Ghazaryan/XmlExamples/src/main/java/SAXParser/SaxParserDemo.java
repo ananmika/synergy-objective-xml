@@ -48,8 +48,10 @@ public class SaxParserDemo extends DefaultHandler {
     }
 
     private void print() {
+        System.out.println("Output: ");
         for (Book book : books) {
-            System.out.println(book.toString());
+            System.out.println(book.toString() );
+            //Do something with this list
         }
     }
     @Override
@@ -96,7 +98,7 @@ public class SaxParserDemo extends DefaultHandler {
         tmpValue = new String(ac, i, j);
     }
     public static void main(String[] args) {
-        new SaxParserDemo("main/resources/catalog.xml");
+        new SaxParserDemo("src/main/resources/catalog.xml");
     }
 
 }
