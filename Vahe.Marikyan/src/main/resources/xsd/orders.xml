@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><purchases xmlns="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com orders.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<purchases xmlns="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.w3schools.com orders.xsd">
     <purchase purchaseOrderNumber="UO11111111">
         <orderDate>2016-03-14</orderDate>
         <status>shipped</status>

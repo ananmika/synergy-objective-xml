@@ -67,9 +67,7 @@ public class DOMParserMain {
 
 
                 System.out.println("======================================");
-
             }
-
         }
 
     }
