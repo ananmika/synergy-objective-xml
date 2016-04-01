@@ -1,0 +1,10 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="book" type="Book" />
+    <xs:complexType name="Book">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string" />
+            <xs:element name="price" type="xs:decimal" />
+            <xs:element name="amount" type="xs:decimal" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE pricelist SYSTEM "src\main\webapp\xmlDtd\dtdExample.dtd">
+<pricelist>
+    <book>
+        <title>Book 1</title>
+        <author>Author 1</author>
+        <price>Price 1</price>
+        <description>Description 1</description>
+    </book>
+    <book>
+        <title>Book 2</title>
+        <author>Author 2</author>
+        <price>Price 2</price>
+        <description>Description 2</description>
+    </book>
+    <book>
+        <title>Book 3</title>
+        <author>Author 3</author>
+        <price>Price 3</price>
+        <description>Description 3</description>
+    </book>
+</pricelist>

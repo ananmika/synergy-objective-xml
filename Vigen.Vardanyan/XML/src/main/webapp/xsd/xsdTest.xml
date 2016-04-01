@@ -1,0 +1,5 @@
+<book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "test.xsd">
+    <title>XML Test</title>
+    <price>100.0</price>
+    <amount>20.00</amount>
+</book>
