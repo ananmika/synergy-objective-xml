@@ -16,8 +16,6 @@ public class OrderHandler extends DefaultHandler {
 
     private boolean isItemElement = false;
 
-    private boolean isConditionNew = false;
-
     private String currentElement = "";
 
     private int count = 0;
@@ -49,7 +47,6 @@ public class OrderHandler extends DefaultHandler {
             item = new Item();
             this.objectStack.push(item);
         }
-
     }
 
     @Override

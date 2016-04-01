@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<purchases>
+    <purchase>
+        <status>shipped</status>
+        <trackingNumber>LT6784868324CK</trackingNumber>
+        <items>
+            <item id="1">
+                <itemName>item 1</itemName>
+                <size>M</size>
+                <quantity>2</quantity>
+                <condition>new</condition>
+            </item>
+            <item id="2">
+                <itemName>item 2</itemName>
+                <size>s</size>
+                <quantity>1</quantity>
+                <condition>used</condition>
+            </item>
+        </items>
+    </purchase>
+</purchases>
