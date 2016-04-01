@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE projects SYSTEM "C:\Users\hasmik.ghazaryan\Desktop\ChessXml\src\main\resources\project.dtd">
+<?xml-stylesheet type="text/xsl" href="project.xsl"?>
+<!DOCTYPE projects SYSTEM "src/main/resources/project.dtd">
 <projects>
     <project id="9999" type="single-year">
         <title>
-            <txt languageId="1"> Project[ENG] </txt>
-            <txt languageId="2"> Project[NAT] </txt>
+            <txt languageId="1"> First Project Eng </txt>
+            <txt languageId="2"> First Project Nat </txt>
         </title>
         <description>
-            <txt languageId="1"> DTD jigyarov example :)[ENG] </txt>
-            <txt languageId="2"> DTD jigyarov example :)[NAT] </txt>
+            <txt languageId="1"> DTD jigyarov example :) Eng </txt>
+            <txt languageId="2"> DTD jigyarov example :) Nat </txt>
         </description>
         <startDate> 02.03.2016 </startDate>
         <endDate> 29.03.2016 </endDate>
         <financialData>
             <commitment id ="1" type ="commitment" >
+                <donor>
+                    <name> Donor 1 </name>
+                </donor>
                 <year>2016</year>
                 <amount>1000</amount>
                 <disbursements>
