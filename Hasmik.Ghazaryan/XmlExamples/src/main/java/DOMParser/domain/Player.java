@@ -10,8 +10,11 @@ public class Player {
     private Action action;
     private double cash;
     private List<Card> cards;
+    private Integer turn;
 
-    public Player(List<Card> cards){};
+    public Player(List<Card> cards){
+        this.cards = cards;
+    };
 
     public Player(Action action, double cash, List<Card> cards) {
         this.action = action;
@@ -41,5 +44,23 @@ public class Player {
 
     public void setCards(List<Card> cards) {
         this.cards = cards;
+    }
+
+    public Integer getTurn() {
+        return turn;
+    }
+
+    public void setTurn(Integer turn) {
+        this.turn = turn;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "action=" + action +
+                ", cash=" + cash +
+                ", cards=" + cards +
+                ", turn=" + turn +
+                '}';
     }
 }

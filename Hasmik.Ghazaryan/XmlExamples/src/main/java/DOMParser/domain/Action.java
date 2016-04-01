@@ -1,5 +1,7 @@
 package main.java.DOMParser.domain;
 
+import com.sun.istack.internal.Nullable;
+
 import java.math.BigDecimal;
 
 /**
@@ -7,28 +9,34 @@ import java.math.BigDecimal;
  */
 public class Action {
 
-    private ActionType actionType;
-    private BigDecimal amount;
+    private String actionType;
+    private double amount;
 
-    public Action(ActionType actionType, BigDecimal amount) {
+    public Action(String actionType) {
         this.actionType = actionType;
-        this.amount = amount;
     }
 
-    public ActionType getActionType() {
+    public String getActionType() {
         return actionType;
     }
 
-    public void setActionType(ActionType actionType) {
+    public void setActionType(String actionType) {
         this.actionType = actionType;
     }
 
-    public BigDecimal getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(BigDecimal amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 
+    @Override
+    public String toString() {
+        return "Action{" +
+                "actionType='" + actionType + '\'' +
+                ", amount=" + amount +
+                '}';
+    }
 }

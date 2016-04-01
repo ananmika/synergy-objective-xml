@@ -5,27 +5,35 @@ package main.java.DOMParser.domain;
  */
 public class Card {
 
-    private Rank rank;
-    private Suit suit;
+    private String rank;
+    private String suit;
 
-    public Card(Rank rank, Suit suit) {
+    public Card(String rank, String suit) {
         this.rank = rank;
         this.suit = suit;
     }
 
-    public Suit getSuit() {
-        return suit;
-    }
-
-    public void setSuit(Suit suit) {
-        this.suit = suit;
-    }
-
-    public Rank getRank() {
+    public String getRank() {
         return rank;
     }
 
-    public void setRank(Rank rank) {
+    public void setRank(String rank) {
         this.rank = rank;
+    }
+
+    public String getSuit() {
+        return suit;
+    }
+
+    public void setSuit(String suit) {
+        this.suit = suit;
+    }
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "rank='" + rank + '\'' +
+                ", suit='" + suit + '\'' +
+                '}';
     }
 }

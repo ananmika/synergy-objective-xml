@@ -8,13 +8,11 @@ import java.util.List;
 public class Table {
 
     private List<Player> players;
-    private List<Card> cards;
 
     public Table(){};
 
-    public Table(List<Player> players, List<Card> cards) {
+    public Table(List<Player> players) {
         this.players = players;
-        this.cards = cards;
     }
 
     public List<Player> getPlayers() {
@@ -25,11 +23,10 @@ public class Table {
         this.players = players;
     }
 
-    public List<Card> getCards() {
-        return cards;
-    }
-
-    public void setCards(List<Card> cards) {
-        this.cards = cards;
+    @Override
+    public String toString() {
+        return "Table{" +
+                "players=" + players +
+                '}';
     }
 }
