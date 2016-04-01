@@ -48,8 +48,8 @@ color: #0A0A2A
 }
 
 .prefix{	
-color: #D0FA58
-		background-position: left top	
+	color: #D0FA58
+	background-position: left top	
 }
 
 .image{	
@@ -90,7 +90,7 @@ vertical-align: top;
 		<span class = "span1">ISBN :	</span><span class = "span2"><xsl:value-of select="isbn"/></span><br/>
 		<span class = "span1">Title :	</span><span class = "span2"> <xsl:value-of select="title"/></span><br/>
 		<span class = "span1">SubTitle : 	</span><span class = "span2"><xsl:value-of select="subTitle"/></span><br/>
-		<span class = "span1">Price :	</span><span class = "span2">xsl:value-of select="price"/></span><br/>
+		<span class = "span1">Price :	</span><span class = "span2"><xsl:value-of select="price"/></span><br/>
 		<span class = "span1">Publisher :	</span><span class = "span2"><xsl:value-of select="publisherHouse"/></span><br/>
 		<span class = "span1">Pulished Year :	</span><span class = "span2"><xsl:value-of select="publishingYear"/></span><br/>
 		<span class = "span1">Published place :	</span><span class = "span2"><xsl:value-of select="printedPlace"/></span><br/>

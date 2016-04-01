@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:element name="shop">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="department" type="department" maxOccurs="unbounded"/>
+			</xs:sequence>	
+		</xs:complexType>		
+	</xs:element>
+	
+	<xs:complexType name="department">
+	<xs:sequence>		
+		<xs:element name="productors" type="productors"/>
+	</xs:sequence>
+	<xs:attribute name="category" type="xs:string" use="required"/>
+	<xs:attribute type="dairy" type="xs:string" use="required"/>
+	<xs:attribute type="img" type="xs:string"/>
+</xs:complexType>
+
+<xs:complexType name="productors">
+  <xs:sequence>
+    <xs:element name="productor" type="productor" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+
+<xs:complexType name="productor">
+  <xs:sequence>
+    <xs:element name="goods" type="goods">
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="goods">
+  <xs:sequence>
+    <xs:element name="good" type="good" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+	
+	<xs:complexType name="good">
+		<xs:sequence>
+			<xs:element name="productDate" type="xs:date"/>
+			<xs:element name="expireDate" type="xs:date"/>
+			<xs:element name="size" type="xs:decimal"/>
+			<xs:element name="price" type="xs:positiveInteger"/>
+		</xs:sequence>
+		<xs:attribute name="goodName" type="xs:string"/>
+	</xs:complexType>
+	
+</xs:schema>

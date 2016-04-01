@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="displayStyle.xsl"?>
-<!DOCTYPE libraryBooks SYSTEM "library_dtd.dtd">
-
 <libraryBooks>  
 <category title="Databse" number="001">
 	  <books>
@@ -87,7 +84,7 @@
 	  </books>
   </category>
   
-  <category title="Project management" number="003">
+  <category title="Project Management" number="003">
 	  <books>
 		  <book id="b1358717874" available="true" img="DM1">
 		  <isbn>ISBN: 978-0-0258-98751-2</isbn>
