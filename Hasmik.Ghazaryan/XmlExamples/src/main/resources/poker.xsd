@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name='table'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name='player' type='player' minOccurs='2' maxOccurs='9'/>
+                <xs:element name='commonCard' type='card' minOccurs='0' maxOccurs='5'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="player">
+        <xs:sequence>
+            <xs:element name="card" type="card" minOccurs='0' maxOccurs='2'/>
+            <xs:element name="cash" type="amount"/>
+            <xs:element name="action" type="action" minOccurs='1' maxOccurs='1'/>
+        </xs:sequence>
+        <xs:attribute ref='turn' use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="action">
+        <xs:attribute name="type" type="actionType" default="Check" />
+        <xs:attribute name="amount" type="amount" default="0.00"/>
+    </xs:complexType>
+
+    <xs:simpleType name="actionType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Fold" />
+            <xs:enumeration value="Check" />
+            <xs:enumeration value="Call" />
+            <xs:enumeration value="Bet" />
+            <xs:enumeration value="Raise" />
+            <xs:enumeration value="Show" />
+            <xs:enumeration value="AllIn" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="amount">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2"/>
+            <xs:minInclusive value="0.00"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="card">
+        <xs:attribute name="rank" type="rank" use="required"/>
+        <xs:attribute name="suit" type="suit" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="rank">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Two"/>
+            <xs:enumeration value="Three"/>
+            <xs:enumeration value="Four"/>
+            <xs:enumeration value="Five"/>
+            <xs:enumeration value="Six"/>
+            <xs:enumeration value="Seven"/>
+            <xs:enumeration value="Eight"/>
+            <xs:enumeration value="Nine"/>
+            <xs:enumeration value="Ten"/>
+            <xs:enumeration value="Jack"/>
+            <xs:enumeration value="Queen"/>
+            <xs:enumeration value="King"/>
+            <xs:enumeration value="Ace"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="suit">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Clubs"/>
+            <xs:enumeration value="Diamonds"/>
+            <xs:enumeration value="Hearts"/>
+            <xs:enumeration value="Spades"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:attribute name="turn">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:pattern value="[01]"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+</xs:schema>

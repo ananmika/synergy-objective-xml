@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE projects SYSTEM "C:\Users\hasmik.ghazaryan\Desktop\ChessXml\src\main\resources\project.dtd">
+<projects>
+    <project id="9999" type="single-year">
+        <title>
+            <txt languageId="1"> Project[ENG] </txt>
+            <txt languageId="2"> Project[NAT] </txt>
+        </title>
+        <description>
+            <txt languageId="1"> DTD jigyarov example :)[ENG] </txt>
+            <txt languageId="2"> DTD jigyarov example :)[NAT] </txt>
+        </description>
+        <startDate> 02.03.2016 </startDate>
+        <endDate> 29.03.2016 </endDate>
+        <financialData>
+            <commitment id ="1" type ="commitment" >
+                <year>2016</year>
+                <amount>1000</amount>
+                <disbursements>
+                    <disbursement id="11" type ="disbursement">
+                        <year> 2016 </year>
+                        <amount> 300 </amount>
+                        <implementer>
+                            <name> Has </name>
+                            <role> 1st level implementer </role>
+                        </implementer>
+                    </disbursement>
+                    <disbursement id="12" type ="disbursement">
+                        <year> 2016 </year>
+                        <amount> 700 </amount>
+                        <implementer>
+                            <name> Hasmik </name>
+                            <role> 2nd level implementer </role>
+                        </implementer>
+                    </disbursement>
+                </disbursements>
+            </commitment>
+        </financialData>
+    </project>
+    <project id="8888">
+        <title>
+            <txt languageId="1"> Another Project[ENG] </txt>
+        </title>
+        <startDate> 02.03.2016 </startDate>
+        <endDate> 29.03.2016 </endDate>
+        <financialData>
+            <commitment id ="3" type ="commitment" >
+                <year>2016</year>
+                <amount>2000</amount>
+                <disbursements>
+                    <disbursement id="31" type ="disbursement">
+                        <year> 2016 </year>
+                        <amount> 2000 </amount>
+                        <implementer>
+                            <name> someone </name>
+                            <role> 1st level implementer </role>
+                        </implementer>
+                    </disbursement>
+                </disbursements>
+            </commitment>
+            <expenditure id="311">
+                <year> 2016 </year>
+                <amount> 2000 </amount>
+            </expenditure>
+        </financialData>
+    </project>
+</projects>

@@ -1,0 +1,27 @@
+<!ELEMENT projects (project*)>
+<!ELEMENT project (title, description?, startDate, endDate, financialData*)>
+<!ELEMENT title (txt+)>
+<!ELEMENT txt (#PCDATA)
+<!ELEMENT description (txt+)>
+<!ELEMENT startDate (#PCDATA)>
+<!ELEMENT endDate (#PCDATA)>
+<!ELEMENT financialData (commitment+, expenditure*)>
+<!ELEMENT commitment (year, amount, donor+, disbursements)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT amount (#PCDATA)>
+<!ELEMENT donor (name)>
+<!ELEMENT disbursements (disbursement*)>
+<!ELEMENT disbursement (year, amount, implementer)>
+<!ELEMENT implementer (name, role)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT role (#PCDATA)>
+<!ELEMENT expenditure (year, amount)>
+
+<!ATTLIST project id CDATA #REQUIRED>
+<!ATTLIST project type (single-year|multi-year) #IMPLIED>
+<!ATTLIST txt languageId CDATA #REQUIRED>
+<!ATTLIST commitment id CDATA #REQUIRED>
+<!ATTLIST disbursement id CDATA #REQUIRED>
+<!ATTLIST expenditure id CDATA #REQUIRED>
+<!ATTLIST commitment type CDATA #FIXED "commitment">
+<!ATTLIST disbursement type CDATA #FIXED "disbursement">

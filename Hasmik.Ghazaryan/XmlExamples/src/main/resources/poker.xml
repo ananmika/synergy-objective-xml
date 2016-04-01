@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<table>
+    <player turn="1">
+        <card rank="Jack" suit="Hearts"/>
+        <card rank="Jack" suit="Diamonds"/>
+        <cash>10000</cash>
+        <action type="Show"/>
+    </player>
+    <player turn="0">
+        <card rank="Ace" suit="Hearts"/>
+        <card rank="Three" suit="Spades"/>
+        <cash>8700</cash>
+        <action type="Show"/>
+    </player>
+    <player turn="0">
+        <card rank="Ace" suit="Diamonds"/>
+        <card rank="Five" suit="Diamonds"/>
+        <cash>6600</cash>
+        <action type="Show"/>
+    </player>
+    <player turn="0">
+        <card rank="Queen" suit="Hearts"/>
+        <card rank="King" suit="Clubs"/>
+        <cash>11300</cash>
+        <action type="Show"/>
+    </player>
+    <player turn="0">
+        <card rank="Seven" suit="Clubs"/>
+        <card rank="Eight" suit="Clubs"/>
+        <cash>8100</cash>
+        <action type="Fold"/>
+    </player>
+    <player turn="0">
+        <card rank="Queen" suit="Spades"/>
+        <card rank="Four" suit="Diamonds"/>
+        <cash>8700</cash>
+        <action type="Show"/>
+    </player>
+    <commonCard rank="Two" suit="Hearts"/>
+    <commonCard rank="Ace" suit="Diamonds"/>
+    <commonCard rank="Jack" suit="Clubs"/>
+    <commonCard rank="Seven" suit="Hearts"/>
+    <commonCard rank="King" suit="Spades"/>
+</table>
